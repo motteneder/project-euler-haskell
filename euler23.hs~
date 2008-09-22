@@ -1,2 +1,0 @@
-getDivisors :: Int -> [Int]
-getDividors n =   filter (isDivideable n) [1..n])

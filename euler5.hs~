@@ -1,2 +1,0 @@
-solveN :: Int -> Bool
-solveN n = sum (map (n %) [1..20]) == 0
