@@ -1,8 +1,6 @@
-isPalindrome :: Int -> Bool
-isPalindrome n = reverse (show n) == (show n)
+cross  xs n = map (*n) xs
+isPalindrome n = (show n) == (reverse (show n))
+numbers = map (cross [100..999]) [100..999]
 
-prop_isPalindrome n = reverse (show n) == show n
-  where types = n::Int
-asdy <- [100..999]]
-        in 
-          show(last(takeWhile (isPalindrome) nums))
+main = do
+  putStrLn (show (maximum(filter (isPalindrome) numbers)))
